@@ -3,6 +3,38 @@
  <head>
   <meta charset="utf-8">
   <title>ApriTec</title>
+  <style>
+  body {
+    margin: 0;
+  }
+
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  #header {
+    height: 40px;
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+    display: flex;
+    justify: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header a {
+    text-decoration: none;
+    color: #2c3e50;
+    margin: 0 10px;
+    padding: 3px 10px;
+    background: #5ccebf;
+  }
+  </style>
+
   </head>
   <body>
    <br>
@@ -10,5 +42,16 @@
    <a href="/SPA/index.html">SPAの表示</a><br>
     <a href="/VueDoc/VueDoc.html">Node.jsの表示</a><br>
     <a href="/TSVueDoc/TSVueDoc.html">TypeScript Vueコンポーネントの表示</a>
+
+    <div id="app">
+      <div id="header">
+        <a href="/TSDoc/TSDoc.html">TypeScriptの表示</a><br>
+        <a href="/SPA/index.html">SPAの表示</a><br>
+         <a href="/VueDoc/VueDoc.html">Node.jsの表示</a><br>
+         <a href="/TSVueDoc/TSVueDoc.html">TypeScript Vueコンポーネントの表示</a>
+      </div>
+      <router-view></router-view>
+    </div>
+
   </body>
 </html>
