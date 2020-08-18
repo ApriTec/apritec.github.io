@@ -15,7 +15,13 @@
     color: #2c3e50;
   }
 
-  #header {
+  #header1 {
+    height: 40px;
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+    margin-top: 200px;
+  }
+  #header2 {
     height: 40px;
     background: white;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
@@ -34,14 +40,13 @@
   </head>
   <body>
     <div id="app">
-      <div id="header">
+      <div id="header1">
         <a href="/PHPDoc/PHPDoc.html">PHPの開発事例　index.html</a>
         <a href="/PHPDoc/PHPDoc2.html">PHPの開発事例　css</a>
         <a href="/PHPDoc/PHPDoc3.html">PHPの開発事例　jQuery</a>
-
-      <a href="/TSDoc/TSDoc.html">TypeScriptの表示</a><br>
-      <a href="/SPA/index.html">SPAの表示</a><br>
-       <a href="/VueDoc/VueDoc.html">Node.jsの表示</a><br>
+      </div>
+    </br>
+      <div id="header2">
        <a href="/TSVueDoc/TSVueDoc.html">TypeScript Vueコンポーネントの表示</a>
      </div>
       <router-view></router-view>
